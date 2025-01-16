@@ -1,23 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Void Agency</title>
-</head>
-<body>
-    <canvas id="canvas"></canvas>
-</body>
-
 <script>
-      const canvas = document.getElementById('canvas');
-  const ctx = canvas.getContext('2d');
+import { onMount } from 'svelte';
 
-  canvas.width = window.innerWidth;
-  canvas.height = 200;
+onMount(() => {
+  if (window.innerWidth > 728) {
+    const canvas = document.getElementById('canvasTitle');
+    const ctx = canvas.getContext('2d');
+  
+    canvas.width = canvas.offsetWidth;
+    canvas.height = canvas.offsetHeight;  
 
 
-  class Particle {
+    // svelte-ignore perf_avoid_nested_class
+        class Particle {
     constructor(effect, x, y, color) {
       this.effect = effect;
       this.x = Math.random() * this.effect.canvasWidth;
@@ -36,6 +30,7 @@
       this.friction = Math.random() * 0.6 + 0.15;
       this.ease = Math.random() * 0.1 + 0.005;
     }
+    
     draw(){
       this.effect.context.fillStyle = this.color;
       this.effect.context.fillRect(this.x, this.y, this.size, this.size);
@@ -57,7 +52,9 @@
     }
   }
 
-  class Effect {
+
+  // svelte-ignore perf_avoid_nested_class
+    class Effect {
     constructor(context, canvasWidth, canvasHeight) {
       this.context = context;
       this.canvasWidth = canvasWidth;
@@ -72,23 +69,24 @@
         radius: 2000,
         x: 0,
         y: 0
-      }
+      };
       window.addEventListener('mousemove', (e) => {
-        this.mouse.x = e.x;
-        this.mouse.y = e.y;
-        console.log(e);
+        this.mouse.x = e.x - canvas?.getBoundingClientRect().x;
+        this.mouse.y = e.y - canvas?.getBoundingClientRect().y;
       })
     }
 
+    //Escreve o title e difine config, cor, font size, align
     drawTitle(title){
-      this.context.fillStyle = 'rgb(140, 59, 240)';
-      this.context.font = '150px Audiowide';
+      this.context.fillStyle = '#8C3BF0';
+      this.context.font = '132px Audiowide';
       this.context.textAlign = 'center';
       this.context.textBaseline = 'middle';
       this.context.fillText(title, this.titleX, this.titleY);
       this.convertToParticles();
     }
     
+
     convertToParticles(){
       const pixel = this.context.getImageData(0, 0 ,this.canvasWidth, this.canvasHeight).data;
       this.context.clearRect(0, 0 , this.canvasWidth, this.canvasHeight);
@@ -100,13 +98,13 @@
             const red = pixel[index];
             const green = pixel[index+1];
             const blue = pixel[index+2];
-            const color = `rgb('${red}, ${green}, ${blue}`;
+            const color = `rgb('${red}, ${green}, ${blue}')`;
             this.particles.push(new Particle(this, x, y, color));
           }
         }
       }
-      console.log(this.particles);
     }
+    
     render(){
       this.particles.forEach(particle => {
         particle.update()
@@ -114,20 +112,32 @@
       })
     }
   }
+    
 
-  const effect = new Effect(ctx, canvas.width, canvas.height);
-  const title = 'Em Breve';
+    const effect = new Effect(ctx, canvas.width, canvas.height);
 
-  effect.drawTitle(title);
-  effect.render();
-
-  function animate() {
-    ctx.clearRect(0, 0 , canvas.width, canvas.height);
-
+    effect.drawTitle('VOID Agency');
     effect.render();
-    requestAnimationFrame(animate);
-  }
 
-  animate();
+    function animate() {
+      ctx.clearRect(0, 0 , canvas.width, canvas.height);
+      effect.render();
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  }
+});
+  
 </script>
-</html>
+
+<canvas id="canvasTitle" class="hidden md:flex" aria-label="VOID Agency"></canvas>
+<h1 class="md:hidden text-[#8C3BF0] mt-32 mb-36">VOID Agency</h1>
+
+<style>
+  canvas {
+    align-items: center;
+    width: 100%;
+    height: 700px;
+  }
+</style>
