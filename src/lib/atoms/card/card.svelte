@@ -3,10 +3,16 @@
   export let text = "";
 </script>
 
-<div class="card max-w-60 bg-slate-400 rounded-xl px-2 py-4">
-  <div class="flex items-center gap-4 mb-3">
-    <img src="https://picsum.photos/80/80" alt="Imagem aleatória" />
-    <h3>{title}</h3>
+
+<!-- svelte-ignore a11y_no_static_element_interactions -->
+<!-- svelte-ignore a11y_mouse_events_have_key_events -->
+<div class="card group max-w-1/3 w-full bg-[#F5F5F5] relative rounded-xl overflow-hidden mb-5 pb-3 break-inside-avoid transition-all">
+  <div class="text-left mb-3 bg-[#8C3BF0] p-6 flex flex-col group-hover:flex-row justify-center group-hover:justify-start gap-4 items-center absolute w-full h-full group-hover:h-[100px] transition-all">
+    <div class="scale-125 group-hover:scale-100 flex flex-col group-hover:flex-row justify-center group-hover:justify-start gap-4 items-center">
+
+      <slot></slot>
+      <h3>{title}</h3>
+    </div>
   </div>
-  <p>{text}</p>
+  <p class="text-black px-8 pb-4 text-left pt-[120px]">{text}</p>
 </div>
