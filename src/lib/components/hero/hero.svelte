@@ -138,6 +138,6 @@ onMount(() => {
   canvas {
     align-items: center;
     width: 100%;
-    height: 700px;
+    height: 660px;
   }
 </style>

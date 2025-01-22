@@ -45,7 +45,7 @@
   });
 </script>
 
-<section class="digitalSection md:flex justify-between">
+<section class="md:flex md:justify-evenly">
   <div class="md:w-2/5 md:sticky md:top-10 self-start ">
     <h2 class="text-6xl">Contruimos o seu digital do zero</h2>
     <img src={currentImage} alt="Imagem aleatória" class="w-full  max-w-[75%] mx-auto mt-10 rounded-xl" />
@@ -62,7 +62,7 @@
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <p class="digiText" data-index="4" >Tambem cuidamos da publicação do projeto e oferecemos suporte contínuo, garantindo a manutenção e a evolução do seu ambiente digital.</p>
     <br /><br />
-    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn bg-[#8C3BF0] px-8 py-4 rounded-xl mt-10 w-fit mx-auto block font-bold text-lg">Falar com um especialista</a>
+    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn">Falar com um especialista</a>
 
   </div>
 </section>
