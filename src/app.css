@@ -36,24 +36,13 @@ body {
   text-align: center;
   overflow-x: hidden;
 }
-/* 
-@media (max-height: 620px) {
-  body {
-    transform: scale(0.8);
-    transform-origin: top center;
-  }
-} */
 
 header,
 section,
 footer {
   max-width: 1280px;
-  width: 100%;
+  width: 88vw;
   margin: 0 auto;
-}
-section {
-  padding-inline: 28px;
-  /* opacity: 0; */
 }
 
 p {
@@ -85,10 +74,21 @@ h3 {
   transition: all 0.4s;
   position: relative;
   overflow: hidden;
+  background-color: var(--color-primary);
+  color: var(--color-white);
+  padding: 16px 32px;
+  border-radius: 12px;
+  width: fit-content;
+  margin: 32px auto;
+  display: block;
+  font-weight: 700;
+  font-size: 1.125rem /* 18px */;
+  line-height: 1.75rem /* 28px */;
 }
+
 .btn:hover {
   background-color: var(--color-highLight);
-  color: #000;
+  color: var(--color-black);  
 }
 
 .btn::before {
