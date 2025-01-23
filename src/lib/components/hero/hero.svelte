@@ -131,8 +131,8 @@ onMount(() => {
   
 </script>
 
-<canvas id="canvasTitle" class="hidden md:flex" aria-label="VOID Agency"></canvas>
-<h1 class="md:hidden text-[#8C3BF0] mt-32 mb-36">VOID Agency</h1>
+<canvas id="canvasTitle" class="hidden md:flex font-[Nasalization]" aria-label="VOID Agency"></canvas>
+<h1 class="md:hidden text-[#8C3BF0] mt-32 mb-36 font-[Nasalization]">VOID Agency</h1>
 
 <style>
   canvas {
