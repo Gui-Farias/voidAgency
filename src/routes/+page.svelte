@@ -10,7 +10,6 @@
     import Impacto from "$lib/components/impacto/impacto.svelte";
     import GoldDivision from "$lib/components/goldDivision/goldDivision.svelte";
 
-
   // let itemsAnima;
 
   // function animaScroll() {
