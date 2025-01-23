@@ -79,7 +79,7 @@ onMount(() => {
     //Escreve o title e difine config, cor, font size, align
     drawTitle(title){
       this.context.fillStyle = '#8C3BF0';
-      this.context.font = '132px Audiowide';
+      this.context.font = '132px Nasalization';
       this.context.textAlign = 'center';
       this.context.textBaseline = 'middle';
       this.context.fillText(title, this.titleX, this.titleY);
