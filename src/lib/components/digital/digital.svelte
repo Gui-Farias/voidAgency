@@ -45,8 +45,8 @@
   });
 </script>
 
-<section class="md:flex md:justify-evenly">
-  <div class="md:w-2/5 md:sticky md:top-10 self-start ">
+<section class="md:flex md:justify-between lg:justify-evenly">
+  <div class="md:w-3/5 lg:w-2/5 md:sticky md:top-10 self-start ">
     <h2 class="text-6xl">Contruimos o seu digital do zero</h2>
     <img src={currentImage} alt="Imagem aleatória" class="w-full  max-w-[75%] mx-auto mt-10 rounded-xl" />
   </div>
@@ -62,8 +62,7 @@
     <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
     <p class="digiText" data-index="4" >Tambem cuidamos da publicação do projeto e oferecemos suporte contínuo, garantindo a manutenção e a evolução do seu ambiente digital.</p>
     <br /><br />
-    <a href="http://" target="_blank" rel="noopener noreferrer" class="btn">Falar com um especialista</a>
-
+    <a href="https://api.whatsapp.com/send?phone=5511910529070&text=Olá,%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20..." target="_blank" rel="noopener noreferrer" class="btn">Falar com um especialista</a>
   </div>
 </section>
 
