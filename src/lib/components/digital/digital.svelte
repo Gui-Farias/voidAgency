@@ -1,19 +1,19 @@
 <script>
   import { onMount } from "svelte";
-  import digi01 from '$lib/assets/digi01.webp'
-  import digi02 from '$lib/assets/digi02.webp'
-  import pcJoao from '$lib/assets/pcJoao.webp'
-  import pcGui from '$lib/assets/pcGui.webp'
-  import pcOcta from '$lib/assets/pcOcta.webp'
+  import digi01 from '$lib/assets/digi01.svg'
+  import digi02 from '$lib/assets/digi02.svg'
+  import digi03 from '$lib/assets/digi03.svg'
+  import digi04 from '$lib/assets/digi04.svg'
+  import digi05 from '$lib/assets/digi05.svg'
 
   
   // Lista de imagens que você quer trocar ao rolar a página
   const images = [
     digi01,
     digi02,
-    pcJoao,
-    pcGui,
-    pcOcta
+    digi03,
+    digi04,
+    digi05,
   ];
 
   let currentImage = images[0];  // A imagem inicial
