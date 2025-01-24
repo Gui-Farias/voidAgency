@@ -63,7 +63,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.8rem, 3.5vw, 3rem); /* Min: 28px, Scale: Responsivo, Max: 48px */
+  font-size: clamp(1.7rem, 3.5vw, 3rem); /* Min: 28px, Scale: Responsivo, Max: 48px */
   line-height: 1.1; /* Mantém uma leve separação */
   font-weight: 700;
 }
