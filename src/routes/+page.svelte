@@ -7,40 +7,13 @@
   import Services from "$lib/components/services/services.svelte";
   import Video from "$lib/components/video/video.svelte";
   import Works from "$lib/components/works/works.svelte";
-    import Impacto from "$lib/components/impacto/impacto.svelte";
-    import GoldDivision from "$lib/components/goldDivision/goldDivision.svelte";
-
-  // let itemsAnima;
-
-  // function animaScroll() {
-  //   // Loop através de cada item e verifica se está na tela
-  //   itemsAnima.forEach((item) => {
-  //     const rect = item.getBoundingClientRect();
-  //     const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-
-  //     // Se o item estiver pelo menos 85% visível, adiciona a classe 'visible'
-  //     rect.top < viewportHeight * 0.85 && rect.bottom > 0 ? item.classList.add("animate-fadeIn") : item.classList.remove("animate-fadeIn");
-  //   });
-  // }
-
-  // onMount(() => {
-  //   if (typeof window !== "undefined") {
-  //     // Somente executa a lógica de scroll no cliente
-  //     itemsAnima = document.querySelectorAll("section");
-  //     window.addEventListener("scroll", animaScroll);
-  //   }
-
-  //   return () => {
-  //     // Remover o event listener
-  //     if (typeof window !== "undefined") {
-  //       window.removeEventListener("scroll", animaScroll);
-  //     }
-  //   };
-  // });
+  import Impacto from "$lib/components/impacto/impacto.svelte";
+  import GoldDivision from "$lib/components/goldDivision/goldDivision.svelte";
+  
 </script>
 
 <svelte:head>
-  <title>Agência Digital Void Agency | Soluções de Sites, Lojas Virtuais e Marketing</title>
+  <title>Agência Digital Void Agency | Sites, Lojas Virtuais e Marketing Digital</title>
 
   <meta name="description" content="Transformamos ideias em soluções digitais completas. Desenvolvimento de sites, e-commerce, identidade visual e marketing com foco em performance, SEO e acessibilidade." />
 
@@ -50,14 +23,14 @@
   <meta name="robots" content="index, follow" />
 
   <!-- Tags sociais -->
-  <meta property="og:title" content="Agência Digital Void Agency | Soluções de Sites, Lojas Virtuais e Marketing" />
+  <meta property="og:title" content="Agência Digital Void Agency | Sites, Lojas Virtuais e Marketing Digital" />
   <meta property="og:description" content="Transformamos ideias em soluções digitais completas. Desenvolvimento de sites, e-commerce, identidade visual e marketing com foco em performance, SEO e acessibilidade." />
   <!-- <meta property="og:image" content="URL_DA_IMAGEM_DE_DESTAQUE" /> -->
   <meta property="og:url" content="https://voidagency.com.br" />
   <meta property="og:type" content="website" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Agência Digital Void Agency | Soluções de Sites, Lojas Virtuais e Marketing" />
+  <meta name="twitter:title" content="Agência Digital Void Agency | Sites, Lojas Virtuais e Marketing Digital" />
   <meta name="twitter:description" content="Transformamos ideias em soluções digitais completas. Desenvolvimento de sites, e-commerce, identidade visual e marketing com foco em performance, SEO e acessibilidade." />
   <!-- <meta name="twitter:image" content="URL_DA_IMAGEM_DE_DESTAQUE" /> -->
 </svelte:head>

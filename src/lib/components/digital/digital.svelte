@@ -95,5 +95,6 @@
 .opacity-100 {
   opacity: 1;
   filter: blur(0px); /* Remove o blur */
+  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transição suave */
 }
 </style>
