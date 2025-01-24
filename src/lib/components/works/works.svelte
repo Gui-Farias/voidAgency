@@ -10,8 +10,8 @@
 </script>
 
 
-<section class="flex flex-col gap-36 max-w-6xl pb-80 lg:pb-0">
-  <h2>Projetos</h2>
+<section class="flex flex-col gap-52 max-w-6xl pb-80 lg:pb-0">
+  <h2 class="-mt-14 -mb-24">Projetos</h2>
   <div class="work md:flex md:items-start lg:items-center gap-10 lg:gap-24">
     <div class="md:w-1/2 lg:w-3/5">
       <h3 class="mb-6">Psicóloga Daniela Alves</h3>
