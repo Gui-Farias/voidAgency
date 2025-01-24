@@ -57,13 +57,13 @@ h1 {
 }
 
 h2 {
-  font-size: clamp(2.3rem, 4vw, 3.75rem); /* Min: 32px, Scale: Responsivo, Max: 60px */
+  font-size: clamp(2.5rem, 4vw, 3.75rem); /* Min: 32px, Scale: Responsivo, Max: 60px */
   line-height: 1; /* Mantém fixo */
   font-weight: 700;
 }
 
 h3 {
-  font-size: clamp(1.7rem, 3.5vw, 3rem); /* Min: 28px, Scale: Responsivo, Max: 48px */
+  font-size: clamp(2rem, 3.5vw, 3rem); /* Min: 28px, Scale: Responsivo, Max: 48px */
   line-height: 1.1; /* Mantém uma leve separação */
   font-weight: 700;
 }
@@ -80,7 +80,6 @@ h3 {
   border-radius: 12px;
   width: fit-content;
   margin: 32px auto;
-  display: block;
   font-weight: 700;
   font-size: 1.125rem /* 18px */;
   line-height: 1.75rem /* 28px */;

@@ -60,9 +60,8 @@
   });
 </script>
 
-<section class="mt-40">
+<section class="mt-24">
   <h2>Serviços</h2>
-
   
   <div class="md:columns-2 lg:columns-3 mt-24">
     {#each services as service, index}

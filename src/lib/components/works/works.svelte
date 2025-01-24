@@ -33,8 +33,8 @@
 </script>
 
 
-<section class="flex flex-col gap-52 max-w-6xl pb-80 lg:pb-0">
-  <h2 class="-mt-14 -mb-24">Projetos</h2>
+<section class="flex flex-col gap-20 md:gap-52 max-w-6xl pb-72 lg:pb-0">
+  <h2 class="-mt-14 md:-mb-24">Projetos</h2>
   {#each works as work, index}
     <Work reverse={index % 2 === 1} title={work.title} link={work.link} imgDesk={work.imgDesk} imgPhone={work.imgPhone} text={work.text} />      
   {/each}

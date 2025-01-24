@@ -78,7 +78,7 @@
     <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="3" >A Void segue com o desenvolvimento completo, aplicando práticas de performance e acessibilidade para garantir uma experiência digital de alto nível.</p>
     <div class="digiText transition-all opacity-0 md:pb-14" data-index="4">
       <p>Tambem cuidamos da publicação do projeto e oferecemos suporte contínuo, garantindo a manutenção e a evolução do seu ambiente digital.</p>
-      <a href="https://api.whatsapp.com/send?phone=5511910529070&text=Olá,%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20..." target="_blank" rel="noopener noreferrer" class="btn ">Falar com um especialista</a>
+      <a href="https://api.whatsapp.com/send?phone=5511910529070&text=Olá,%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20..." target="_blank" rel="noopener noreferrer" class="btn block">Falar com um especialista</a>
     </div>
   </div>
 </section>
@@ -88,13 +88,13 @@
 .opacity-0 {
   opacity: 0;
   filter: blur(10px); /* Aplica o blur inicial */
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transição suave */
+  transition: opacity 0.7s ease-in-out, filter 0.7s ease-in-out; /* Transição suave */
 }
 
 /* Estilo final: visível sem blur */
 .opacity-100 {
   opacity: 1;
   filter: blur(0px); /* Remove o blur */
-  transition: opacity 0.5s ease-in-out, filter 0.5s ease-in-out; /* Transição suave */
+  transition: opacity 0.7s ease-in-out, filter 0.7s ease-in-out; /* Transição suave */
 }
 </style>
