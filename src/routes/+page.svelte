@@ -1,6 +1,4 @@
 <script>
-  import { onMount, onDestroy } from "svelte";
-
   import Digital from "$lib/components/digital/digital.svelte";
   import Footer from "$lib/components/footer/footer.svelte";
   import Hero from "$lib/components/hero/hero.svelte";

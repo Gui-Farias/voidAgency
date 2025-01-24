@@ -29,7 +29,7 @@
     <a href={link} target="_blank" rel="noopener noreferrer" class="btn hidden md:block">Visitar o site</a>
   </div>
   <div class="relative md:w-1/2 lg:w-2/5 mt-8 md:mt-0">
-    <img src={imgPhone} alt="Imagem aleatória" class="max-w-[33%] md:max-w-[50%] lg:max-w-64 max-h-80 mx-auto absolute bottom-[5vh] -left-[2vw] md:-bottom-24 md:-right-10" />
+    <img src={imgPhone} alt="Imagem aleatória" class="max-w-[33%] md:max-w-[50%] lg:max-w-64 max-h-80 mx-auto absolute bottom-[5vh] -left-[2vw] md:-bottom-24 md:left-auto md:-right-10" />
     <img src={imgDesk} alt="Imagem aleatória" class="max-w-lg mx-auto w-full" />
     <a href={link} target="_blank" rel="noopener noreferrer" class="btn absolute bottom-0 -right-10 block md:hidden">Visitar o site</a>
   </div>
