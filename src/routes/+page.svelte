@@ -7,7 +7,7 @@
   import Works from "$lib/components/works/works.svelte";
   import Impacto from "$lib/components/impacto/impacto.svelte";
   import GoldDivision from "$lib/components/goldDivision/goldDivision.svelte";
-  
+  import Stars from "$lib/components/stars/Stars.svelte";
 </script>
 
 <svelte:head>
@@ -33,6 +33,7 @@
   <!-- <meta name="twitter:image" content="URL_DA_IMAGEM_DE_DESTAQUE" /> -->
 </svelte:head>
 
+<Stars/>
 <Hero />
 <Digital />
 <Video />

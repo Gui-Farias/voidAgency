@@ -2,16 +2,21 @@
 import { onMount } from 'svelte';
 
 onMount(() => {
-  if (window.innerWidth > 728) {
-    const canvas = document.getElementById('canvasTitle');
-    const ctx = canvas.getContext('2d');
-  
-    canvas.width = canvas.offsetWidth;
-    canvas.height = canvas.offsetHeight;  
+  const canvas = document.getElementById('canvasTitle');
+  const ctx = canvas.getContext('2d');
 
+  canvas.width = canvas.offsetWidth;
+  canvas.height = canvas.offsetHeight;  
+
+  // Proporção base: Tamanho da fonte ideal para largura de 1512px
+  const baseFontSize = 172; // Fonte ideal para largura de 1512px
+  const baseWidth = 1512; // Largura usada como referência
+
+  // Calcula a nova fonte proporcional à largura atual do canvas
+  const fontSize = (canvas.width / baseWidth) * baseFontSize;
 
     // svelte-ignore perf_avoid_nested_class
-        class Particle {
+  class Particle {
     constructor(effect, x, y, color) {
       this.effect = effect;
       this.x = Math.random() * this.effect.canvasWidth;
@@ -19,7 +24,7 @@ onMount(() => {
       this.color = color;
       this.originX = x;
       this.originY = y;
-      this.size = this.effect.gap;
+      this.size = this.effect.gap + 0.4;
       this.distanceX = 0;
       this.distanceY = 0;
       this.velocityX = 0;
@@ -64,9 +69,9 @@ onMount(() => {
 
       //particles
       this.particles = [];
-      this.gap = 3;
+      this.gap = this.canvasWidth > 1024 ? 2 : 1;
       this.mouse = {
-        radius: 2000,
+        radius: 4200,
         x: 0,
         y: 0
       };
@@ -75,11 +80,11 @@ onMount(() => {
         this.mouse.y = e.y - canvas?.getBoundingClientRect().y;
       })
     }
-
+      
     //Escreve o title e difine config, cor, font size, align
     drawTitle(title){
       this.context.fillStyle = '#8C3BF0';
-      this.context.font = '132px Nasalization';
+      this.context.font = `${fontSize}px Nasalization`;
       this.context.textAlign = 'center';
       this.context.textBaseline = 'middle';
       this.context.fillText(title, this.titleX, this.titleY);
@@ -126,18 +131,10 @@ onMount(() => {
     }
 
     animate();
-  }
 });
   
 </script>
 
-<canvas id="canvasTitle" class="hidden md:flex font-[Nasalization]" aria-label="VOID Agency"></canvas>
-<h1 class="md:hidden text-[#8C3BF0] mt-32 mb-36 font-[Nasalization]">VOID Agency</h1>
+<canvas id="canvasTitle" class="flex relative items-center w-screen h-[330px] md:h-[660px]" aria-label="VOID Agency"></canvas>
+<h1 class="hidden">VOID Agency</h1>
 
-<style>
-  canvas {
-    align-items: center;
-    width: 100%;
-    height: 660px;
-  }
-</style>

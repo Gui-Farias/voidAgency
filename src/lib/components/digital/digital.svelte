@@ -54,7 +54,8 @@
         lastVisibleIndex = index;
 
         // Chame a função para mudar a imagem (já existente no seu código)
-        changeImage(index);
+        
+        window.innerWidth > 768 ? changeImage(index) : '';
       }
     });
   }, options);
