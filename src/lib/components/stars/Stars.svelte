@@ -1,8 +1,8 @@
 <script>
-    const starCount = 100; // Número de estrelas
-
+    const starCount = 80; // Número de estrelas
+    
     const stars = Array.from({ length: starCount }, () => ({
-        size: Math.random() * 5 + 1, // Tamanho 
+        size: Math.random() * 10 + 1, // Tamanho 
         top: Math.random() * 100,   // Posição vertical (%)
         left: Math.random() * 100,  // Posição horizontal (%)
     }));
@@ -19,22 +19,25 @@
     {/each}
 </span>
   
-
 <style>
 .star {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: animStar 120s linear infinite;
     transition: all;
 }
 .star2 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: animStarStart 60s linear, animStar 120s linear 60s infinite;
     transition: all;
 }
 
 .star0-5 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: animStar 60s linear infinite;
     transition: all;
 }
 .star2-5 {
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
     animation: animStarStart 30s linear, animStar 60s linear 30s infinite;
     transition: all;
 }

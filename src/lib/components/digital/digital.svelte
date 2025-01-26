@@ -66,7 +66,7 @@
 });
 </script>
 
-<section class="md:flex md:justify-between lg:justify-evenly">
+<section class="md:flex md:justify-between lg:justify-evenly animate-fadeIn">
   <div class="md:w-3/5 lg:w-2/5 md:sticky md:top-[14vh] self-start ">
     <h2>Contruimos o seu digital do zero</h2>
     <img src={currentImage} alt="Imagem aleatória" class="w-full transition-all max-w-[75%] mx-auto mt-[10vh] rounded-xl" />
@@ -74,9 +74,9 @@
 
   <div class="text md:w-2/5 mt-40 md:pb-32">
     <p class="digiText transition-all opacity-100 pb-[25vh]" data-index="0" >Na Void Agency, transformamos ideias em presença digital de impacto! 🚀 Da criação de sites modernos e lojas virtuais a estratégias de tráfego pago e identidade visual marcante.</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="1" >Aqui acreditamos que cada projeto começa ouvindo. Primeiro, entendemos suas dores e metas, depois traçamos estratégias personalizadas.</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="2" >Apresentamos as soluções personalizadas. Se necessário, ajustamos tudo em parceria com você para garantir que o resultado final esteja alinhado com o esperado!</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="3" >A Void segue com o desenvolvimento completo, aplicando práticas de performance e acessibilidade para garantir uma experiência digital de alto nível.</p>
+    <p class="digiText transition-all opacity-0 pt-[12vh] pb-[15vh]" data-index="1" >Aqui acreditamos que cada projeto começa ouvindo. Primeiro, entendemos suas dores e metas, depois traçamos estratégias personalizadas.</p>
+    <p class="digiText transition-all opacity-0 pt-[10vh] pb-[15vh]" data-index="2" >Apresentamos as soluções personalizadas. Se necessário, ajustamos tudo em parceria com você para garantir que o resultado final esteja alinhado com o esperado!</p>
+    <p class="digiText transition-all opacity-0 pt-[12vh] pb-[22vh]" data-index="3" >A Void segue com o desenvolvimento completo, aplicando práticas de performance e acessibilidade para garantir uma experiência digital de alto nível.</p>
     <div class="digiText transition-all opacity-0 md:pb-14" data-index="4">
       <p>Tambem cuidamos da publicação do projeto e oferecemos suporte contínuo, garantindo a manutenção e a evolução do seu ambiente digital.</p>
       <a href="https://api.whatsapp.com/send?phone=5511910529070&text=Olá,%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20..." target="_blank" rel="noopener noreferrer" class="btn block">Falar com um especialista</a>

@@ -29,7 +29,7 @@ export default {
         bounceDown: 'bounceDown 1s cubic-bezier(.3,-0.43,.72,1.66) infinite',
         slideInRight: 'slideInRight 0.7s ease-out',
         slideTop: 'slideTop 0.7s ease-out',
-        fadeIn: 'fadeIn 1s ease-in-out forwards',
+        fadeIn: 'fadeIn 2s ease-in-out forwards',
       },
     },
   },
