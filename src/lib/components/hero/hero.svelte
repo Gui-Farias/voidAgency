@@ -137,11 +137,3 @@ onMount(() => {
 
 <canvas id="canvasTitle" class="flex relative items-center w-screen h-[330px] md:h-[660px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
 <h1 class="hidden">VOID Agency</h1>
-
-<style>
-  canvas {
-    align-items: center;
-    width: 100%;
-    height: 660px;
-  }
-</style>
