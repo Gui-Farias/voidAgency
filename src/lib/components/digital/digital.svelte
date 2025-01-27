@@ -88,13 +88,13 @@
 .opacity-0 {
   opacity: 0;
   filter: blur(10px); /* Aplica o blur inicial */
-  transition: opacity 0.7s ease-in-out, filter 0.7s ease-in-out; /* Transição suave */
+  transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out; /* Transição suave */
 }
 
 /* Estilo final: visível sem blur */
 .opacity-100 {
   opacity: 1;
   filter: blur(0px); /* Remove o blur */
-  transition: opacity 0.7s ease-in-out, filter 0.7s ease-in-out; /* Transição suave */
+  transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out; /* Transição suave */
 }
 </style>
