@@ -33,7 +33,7 @@
   <!-- <meta name="twitter:image" content="URL_DA_IMAGEM_DE_DESTAQUE" /> -->
 </svelte:head>
 
-<Stars/>
+<!-- <Stars/> -->
 <Hero />
 <Digital />
 <Video />

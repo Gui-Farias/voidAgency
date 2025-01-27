@@ -69,7 +69,7 @@ onMount(() => {
 
       //particles
       this.particles = [];
-      this.gap = 3;
+      this.gap = this.canvasWidth > 1024 ? 2 : 1;
       this.mouse = {
         radius: 4200,
         x: 0,
