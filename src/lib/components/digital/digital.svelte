@@ -67,7 +67,7 @@
 
 <section class="md:flex md:justify-between lg:justify-evenly">
   <div class="md:w-3/5 lg:w-2/5 md:sticky md:top-[14vh] self-start ">
-    <h2>Contruimos o seu digital do zero</h2>
+    <h2>Construimos o seu digital do zero</h2>
     <img src={currentImage} alt="Imagem aleatória" class="w-full transition-all max-w-[75%] mx-auto mt-[10vh] rounded-xl" />
   </div>
 
