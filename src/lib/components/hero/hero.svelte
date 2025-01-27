@@ -24,7 +24,7 @@ onMount(() => {
     this.color = color;
     this.originX = x;
     this.originY = y;
-    this.size = this.effect.gap;
+    this.size = this.effect.gap + 0.4;
     this.distanceX = 0;
     this.distanceY = 0;
     this.velocityX = 0;
@@ -69,9 +69,9 @@ onMount(() => {
 
     //particles
     this.particles = [];
-    this.gap = 3;
+    this.gap = this.canvasWidth > 1024 ? 2 : 1;
     this.mouse = {
-      radius: 2000,
+      radius: 4200,
       x: 0,
       y: 0
     };
@@ -135,8 +135,8 @@ onMount(() => {
   
 </script>
 
-<canvas id="canvasTitle" class="flex font-[Nasalization]" aria-label="VOID Agency"></canvas>
-<h1 class="hidden text-[#8C3BF0] mt-32 mb-36 font-[Nasalization]">VOID Agency</h1>
+<canvas id="canvasTitle" class="flex relative items-center w-screen h-[330px] md:h-[660px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
+<h1 class="hidden">VOID Agency</h1>
 
 <style>
   canvas {
