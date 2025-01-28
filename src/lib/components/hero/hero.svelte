@@ -2,6 +2,7 @@
 import { onMount } from 'svelte';
 
 onMount(() => {
+  if (window.innerWidth > 640) {
   const canvas = document.getElementById('canvasTitle');
   const ctx = canvas.getContext('2d');
 
@@ -131,9 +132,11 @@ onMount(() => {
   }
 
   animate();
+}
 });
+
   
 </script>
 
-<canvas id="canvasTitle" class="flex relative items-center w-screen h-[330px] md:h-[660px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
-<h1 class="hidden">VOID Agency</h1>
+<canvas id="canvasTitle" class="hidden sm:flex relative items-center w-screen h-[330px] md:h-[660px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
+<h1 class="block sm:hidden text-[#8C3BF0] mt-32 mb-36 font-[Nasalization]">VOID Agency</h1>

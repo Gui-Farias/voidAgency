@@ -8,6 +8,7 @@
   import Impacto from "$lib/components/impacto/impacto.svelte";
   import GoldDivision from "$lib/components/goldDivision/goldDivision.svelte";
     import Stars from "$lib/components/stars/Stars.svelte";
+    import BtnFlutu from "$lib/components/btnFlutu/btnFlutu.svelte";
   
 </script>
 
@@ -35,6 +36,8 @@
 </svelte:head>
 
 <Stars/>
+<BtnFlutu/>
+
 <Hero />
 <Digital />
 <Video />
