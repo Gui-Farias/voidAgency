@@ -1,0 +1,49 @@
+{
+  "about": {
+    "title": "We build your digital presence from scratch",
+    "text1": "At Void Agency, we turn ideas into impactful digital presence! 🚀 From creating modern websites and online stores to paid traffic strategies and striking visual identity.",
+    "text2": "Here, we believe every project starts with listening to you. First, we understand your pain points and dreams, then we design fully customized strategies.",
+    "text3": "We present the designed solutions. If necessary, we adjust everything in partnership with you to ensure the final result aligns with your expectations!",
+    "text4": "We proceed with the complete development, applying performance and accessibility practices to ensure a top-level digital experience.",
+    "text5": "We handle the project publication and offer continuous support, ensuring maintenance and evolution of your digital environment."
+  },
+  "btn": {
+    "especialista": "Talk to a specialist!",
+    "site": "Go to website"
+  },
+  "work": {
+    "title": "Projcts",
+    "proj": [
+      {
+      "title": "Octa Estúdio",
+      "text": "With the main goal of giving space to new artists and contributing to the growth of independent artists, Octa Studio was created and is ready to help you!",
+      "link": "https://octa-estudio.vercel.app",
+      "imgDesk": "/images/works/pcOcta.webp",
+      "imgPhone": "/images/works/octaPhone.webp"
+      },
+      {
+      "title": "Daniela Alves Psychologist",
+      "text": "Mental health is very important and something we all need. This website is the first step for you to schedule a conversation with psychologist Daniela Alves.",
+      "link": "https://danielapsicologia.com.br",
+      "imgDesk": "/images/works/pcDani.webp",
+      "imgPhone": "/images/works/daniPhone.webp"
+      },
+      {
+      "title": "Joao Goes nutritionist",
+      "text": "Create meal plans tailored to your health and body goals with João Goes, nutritionist. He'll guide and support you on your journey to a healthier lifestyle.",
+      "link": "https://joao-goes.vercel.app",
+      "imgDesk": "/images/works/pcJoao.webp",
+      "imgPhone": "/images/works/joaoPhone.webp"
+      },
+      {
+      "title": "Gui Farias",
+      "text": "Creating an online portfolio where you can showcase your work and services is always a great option to find a job or attract new clients.",
+      "link": "https://guifarias.com.br",
+      "imgDesk": "/images/works/pcGui.webp",
+      "imgPhone": "/images/works/guiPhone.webp"
+      }
+    ]
+  },
+  "copy": "© Copyright - All rights reserved {currentYear}",
+  "skip": "Ir para o conteúdo principal"
+}

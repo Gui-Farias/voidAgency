@@ -10,6 +10,20 @@
 
 	import { injectSpeedInsights } from '@vercel/speed-insights/sveltekit';
 	injectSpeedInsights();
+
+	import { register, init, getLocaleFromNavigator, locale } from 'svelte-i18n';
+
+
+	register('en', () => import('$lib/languages/en.json'));
+	register('pt', () => import('$lib/languages/pt.json'));
+
+	init({
+		fallbackLocale: 'pt',
+		initialLocale: getLocaleFromNavigator(),
+	});
+	
+	locale.set('pt');
+	
 </script>
 
 {@render children()}
