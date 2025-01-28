@@ -1,0 +1,49 @@
+{
+  "about": {
+    "title": "Construimos o seu digital do zero",
+    "text1": "Na Void Agency, transformamos ideias em presença digital de impacto! 🚀 Da criação de sites modernos e lojas virtuais a estratégias de tráfego pago e identidade visual marcante.",
+    "text2": "Aqui acreditamos que cada projeto começa te ouvindo. Primeiro, entendemos suas dores e sonhos, depois traçamos estratégias totalmente personalizadas.",
+    "text3": "Apresentamos as soluções projetadas. Se necessário, ajustamos tudo em parceria com você para garantir que o resultado final esteja alinhado com o esperado!",
+    "text4": "Nos seguimos com o desenvolvimento completo, aplicando práticas de performance e acessibilidade para garantir uma experiência digital de alto nível.",
+    "text5": "Cuidamos da publicação do projeto e oferecemos suporte contínuo, garantindo a manutenção e a evolução do seu ambiente digital."
+  },
+  "btn": {
+    "especialista": "Falar com um especialista!",
+    "site": "Visitar o site"
+  },
+  "work": {
+    "title": "Projetos",
+    "proj": [
+      {
+      "title": "Octa Estúdio",
+      "text": "Com o principal objetivo de dar espaço para novos artistas e contribuir para o crescimento de artistas independentes, Octa estúdio foi criada e está pronta para te ajudar!",
+      "link": "https://octa-estudio.vercel.app",
+      "imgDesk": "/images/works/pcOcta.webp",
+      "imgPhone": "/images/works/octaPhone.webp"
+      },
+      {
+      "title": "Psicóloga Daniela Alves",
+      "text": "A saúde mental é muito importante e algo que todos nós precisamos. Este site é o primeiro passo para você agendar uma conversa com a psicóloga Daniela Alves.",
+      "link": "https://danielapsicologia.com.br",
+      "imgDesk": "/images/works/pcDani.webp",
+      "imgPhone": "/images/works/daniPhone.webp"
+      },
+      {
+      "title": "Joao Goes nutricionista",
+      "text": "Crie planos alimentares para alcançar a sua saúde e corpo dos sonhos, conte com o João Goes nutricionista para te orientar e acompanhar nessa jornada.",
+      "link": "https://joao-goes.vercel.app",
+      "imgDesk": "/images/works/pcJoao.webp",
+      "imgPhone": "/images/works/joaoPhone.webp"
+      },
+      {
+      "title": "Gui Farias",
+      "text": "Criar um portfólio online onde você possa mostrar seus trabalhos e serviços é sempre uma boa opção para encontrar um emprego ou atrair novos clientes.",
+      "link": "https://guifarias.com.br",
+      "imgDesk": "/images/works/pcGui.webp",
+      "imgPhone": "/images/works/guiPhone.webp"
+      }
+    ]
+  },
+  "copy": "© Copyright - Direitos reservados {currentYear}",
+  "skip": "Ir para o conteúdo principal"
+}

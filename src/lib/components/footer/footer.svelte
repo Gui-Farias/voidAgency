@@ -1,4 +1,6 @@
 <script>
+  import { t, json } from 'svelte-i18n';
+
   const currentYear = new Date().getFullYear();
 </script>
 
@@ -20,5 +22,5 @@
     Contato@voidagency.com.br
   </a>
 
-  <p class="text-xl">© Copyright - Direitos reservados {currentYear}</p>
+  <p class="text-xl"> {$t('copy', { values: { currentYear: currentYear }})}</p>
 </footer>
