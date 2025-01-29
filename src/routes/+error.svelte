@@ -10,28 +10,7 @@
   });
 </script>
 
-<style>
-  .error-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    text-align: center;
-  }
-
-  .error-title {
-    font-size: 2rem;
-    color: #ff6b6b;
-  }
-
-  .error-message {
-    margin-top: 1rem;
-    font-size: 1.2rem;
-  }
-</style>
-
-<div class="error-container">
-  <h1 class="error-title">Essa pagina não existe!</h1>
-  <p class="error-message">Você será redirecionado em breve...</p>
+<div class="flex flex-col items-center justify-center h-screen text-center">
+  <h1 class="text-[#ff6b6b] text-4xl">Essa pagina não existe!</h1>
+  <p class="mt-4 text-xl">Você será redirecionado em breve...</p>
 </div>
