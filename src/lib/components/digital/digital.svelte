@@ -75,9 +75,9 @@
 
   <div class="text md:w-2/5 mt-40 md:pb-32">
     <p class="digiText transition-all opacity-100 pb-[25vh]" data-index="0" >{$t('about.text1')}</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="1" >{$t('about.text2')}</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="2" >{$t('about.text3')}</p>
-    <p class="digiText transition-all opacity-0 pb-[25vh]" data-index="3" >{$t('about.text4')}</p>
+    <p class="digiText transition-all opacity-0 pt-[12vh] pb-[15vh]" data-index="1" >{$t('about.text2')}</p>
+    <p class="digiText transition-all opacity-0 pt-[10vh] pb-[15vh]" data-index="2" >{$t('about.text3')}</p>
+    <p class="digiText transition-all opacity-0 pt-[12vh] pb-[20vh]" data-index="3" >{$t('about.text4')}</p>
     <div class="digiText transition-all opacity-0 md:pb-14" data-index="4">
       <p>{$t('about.text5')}</p>
       <a href="https://api.whatsapp.com/send?phone=5511910529070&text=Olá,%20estou%20vindo%20do%20seu%20site%20e%20gostaria%20..." target="_blank" rel="noopener noreferrer" class="btn block">{$t('btn.especialista')}</a>

@@ -70,7 +70,7 @@ onMount(() => {
 
     //particles
     this.particles = [];
-    this.gap = this.canvasWidth > 1024 ? 2 : 1;
+    this.gap = 3;
     this.mouse = {
       radius: 4200,
       x: 0,
@@ -138,5 +138,5 @@ onMount(() => {
   
 </script>
 
-<canvas id="canvasTitle" class="hidden sm:flex relative items-center w-screen h-[330px] md:h-[660px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
+<canvas id="canvasTitle" class="hidden sm:flex relative items-center w-screen h-[320px] md:h-[600px] font-[Nasalization]" aria-label="VOID Agency"></canvas>
 <h1 class="block sm:hidden text-[#8C3BF0] mt-32 mb-36 font-[Nasalization]">VOID Agency</h1>
