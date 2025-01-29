@@ -56,7 +56,9 @@
         lastVisibleIndex = index;
 
         // Chame a função para mudar a imagem (já existente no seu código)
-        changeImage(index);
+        if (window.innerWidth > 768) {
+          changeImage(index);
+        }
       }
     });
   }, options);
@@ -70,7 +72,7 @@
 <section class="md:flex md:justify-between lg:justify-evenly">
   <div class="md:w-3/5 lg:w-2/5 md:sticky md:top-[14vh] self-start ">
     <h2>{$t('about.title')}</h2>
-    <img src={currentImage} alt="Imagem aleatória" class="w-full transition-all max-w-[75%] mx-auto mt-[10vh] rounded-xl" />
+    <img src={currentImage} alt="" aria-hidden="true" class="w-full transition-all max-w-sm mx-auto mt-[10vh] rounded-xl" />
   </div>
 
   <div class="text md:w-2/5 mt-40 md:pb-32">
