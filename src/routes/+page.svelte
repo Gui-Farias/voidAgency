@@ -40,7 +40,6 @@
 
 <Hero />
 <Digital />
-<Video />
 <Works />
 <GoldDivision/>
 <Services />
