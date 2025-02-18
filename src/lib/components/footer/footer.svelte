@@ -6,7 +6,7 @@
 </script>
 
 <footer class="pb-8 overflow-hidden -mt-8">
-  <Logo className="mx-auto max-w-80 w-full"/>
+  <Logo className="mx-auto max-w-[800px] w-full"/>
   <br><br><br><br><br>
   <a href="https://www.instagram.com/_void_agency/" target="_blank" rel="noopener noreferrer" class="flex items-center gap-4 text-3xl mb-8 text-center mx-auto w-fit hover:underline">
     <svg width="60" height="60" viewBox="0 0 64 63" xmlns="http://www.w3.org/2000/svg">
