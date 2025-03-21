@@ -13,7 +13,7 @@
 </script>
 
 
-<section class="flex flex-col gap-20 md:gap-52 max-w-6xl pb-72 lg:pb-0">
+<section class="mt-12 flex flex-col gap-20 md:gap-52 max-w-6xl pb-72 lg:pb-0">
   <h2 class="-mt-14 md:-mb-24">{$t('work.title')}</h2>
   {#each shuffle($json('work.proj') || []) as work, index}
     <Work reverse={index % 2 === 1} title={work.title} link={work.link} imgDesk={work.imgDesk} imgPhone={work.imgPhone} text={work.text} />      
