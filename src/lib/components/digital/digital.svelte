@@ -55,8 +55,10 @@
         // Atualize o índice do último elemento visível
         lastVisibleIndex = index;
 
-        // Chame a função para mudar a imagem (já existente no seu código)
-        changeImage(index);
+
+        if(window.matchMedia("(min-width: 768px)").matches) {
+          changeImage(index);
+        }
       }
     });
   }, options);
