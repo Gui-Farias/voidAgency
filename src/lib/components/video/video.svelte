@@ -15,17 +15,7 @@
 
 </script>
 
-<section class="flex justify-center my-44">
-  <!-- <video controls playsinline class="w-full max-h-[80vh] rounded-2xl shadow-lg mx-auto">
-    <source src={videoCel} type="video/mp4" media="(max-width: 768px)" />
-    <source src={videoCelWeb} type="video/webm" media="(max-width: 768px)" />
-    <source src={videoPc} type="video/mp4" />
-    <source src={videoPcWeb} type="video/webm" /> 
-    <track kind="captions" src="" srclang="pt" label="PT" />
-    Seu navegador não suporta vídeos.
-  </video> -->
-
-
+<section class="flex justify-center mt-28 mb-44">
 <video controls playsinline class="w-full max-h-[80vh] rounded-2xl shadow-lg mx-auto">
   {#if isMobile}
     {#if isTouchDevice}

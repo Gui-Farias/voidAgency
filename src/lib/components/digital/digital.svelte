@@ -29,7 +29,7 @@
   const options = {
     root: null,
     rootMargin: '0px',
-    threshold: .8, // O elemento precisa estar 100% visível
+    threshold: window.matchMedia("(min-width: 768px)").matches ? 0.8 : 0.5, // O elemento precisa estar 100% visível
   };
 
   let lastVisibleIndex = null; // Rastreia o último elemento visível
@@ -69,7 +69,7 @@
 });
 </script>
 
-<section class="md:flex md:justify-between lg:justify-evenly">
+<section class="md:flex md:justify-between lg:justify-evenly -mt-20">
   <div class="md:w-3/5 lg:w-2/5 md:sticky md:top-[14vh] self-start ">
     <h2>{$t('about.title')}</h2>
     <img src={currentImage} alt="" aria-hidden="true" class="w-full transition-all max-w-sm mx-auto mt-[10vh] rounded-xl" />
