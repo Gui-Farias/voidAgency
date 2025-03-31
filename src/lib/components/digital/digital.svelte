@@ -50,8 +50,8 @@
 
   <div class="text md:w-2/5 mt-40 md:pb-32">
     {#each [0, 1, 2, 3, 4] as index}
-      <p bind:this={elements[index]} class="digiText transition-all pt-[10vh] pb-[20vh]  {index == 0 && 'pt-0'} {index == 4 && 'pb-0'}" data-index={index}
-         class:opacity-100={isVisible === index} class:opacity-0={isVisible !== index}>
+      <p bind:this={elements[index]} class="digiText transition-all {index === 0 ? 'pt-0' : 'pt-[10vh]'} {index == 4 ? 'pb-0': 'pb-[20vh]'}" data-index={index}
+         class:opacity-100={isVisible === index} class:opacity-0={isVisible !== index} class:pt-0={index == 0} class:pb-0={index == 4}>
         {$t(`about.text${index + 1}`)}
       </p>
       {#if index == 4} 
@@ -76,14 +76,12 @@
 <style>
 .opacity-0 {
   opacity: 0;
-  filter: blur(10px); 
-  transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 
 .opacity-100 {
   opacity: 1;
-  filter: blur(0px); 
-  transition: opacity 0.6s ease-in-out, filter 0.6s ease-in-out;
+  transition: opacity 0.6s ease-in-out;
 }
 </style>
 
